@@ -14,9 +14,14 @@
   --component-padding: var(--space-xxxl);
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
 /*1. RESET AND TYPHOGRAPHY */
 * {
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -40,7 +45,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 600;
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 a,
@@ -950,7 +955,7 @@ textarea.form-control {
   margin-bottom: 0;
   position: relative;
   padding-left: 30px;
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgba(34, 34, 34, 0.5);
   font-weight: 400;
   cursor: pointer;
@@ -1101,7 +1106,7 @@ textarea.form-control {
   position: relative;
   margin-bottom: 0;
   padding-left: 30px;
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #737373;
   font-weight: 400;
   cursor: pointer;
@@ -8107,7 +8112,6 @@ textarea.form-control {
 
 .ps-search-table .input-group-append a i {
   color: #134F41;
-  font-weight: 900;
   font-size: 18px;
 }
 
@@ -8719,7 +8723,6 @@ textarea.form-control {
   background-size: cover;
   border-radius: 4px;
   background-color: #f8f9e7;
-  margin-bottom: 40px;
 }
 
 .ps-delivery .ps-delivery__text {
@@ -13215,6 +13218,7 @@ textarea.form-control {
   z-index: 100;
   border-radius: 0 0 6px 6px;
   min-width: calc(100% + 40px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .mega-menu>* {
@@ -14265,9 +14269,9 @@ textarea.form-control {
 }
 
 .ps-header .ps-header__search {
-  min-width: 500px;
   display: none;
   margin-right: 50px;
+  width: 100%;
 }
 
 .ps-header .ps-language-currency {
@@ -14275,6 +14279,7 @@ textarea.form-control {
   padding-right: 25px;
   margin-right: 10px;
   position: relative;
+  min-width: max-content;
 }
 
 .ps-header .ps-language-currency::after {
@@ -14316,6 +14321,7 @@ textarea.form-control {
   margin: 0;
   align-items: center;
   gap: 40px;
+  min-width: max-content;
 }
 
 .ps-header .ps-header__icons li {
@@ -16335,9 +16341,9 @@ textarea.form-control {
 }
 
 .ps-footer--block .ps-block__title {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #333;
   font-weight: 600;
 }
@@ -16402,7 +16408,6 @@ textarea.form-control {
 
 .ps-footer--top .ps-footer__link {
   color: #333;
-  font-weight: 600;
   font-size: 16px;
 }
 
@@ -16469,7 +16474,7 @@ textarea.form-control {
 
 .ps-footer--contact .ps-footer__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
   margin-bottom: 20px;
   color: #333;
@@ -16520,7 +16525,7 @@ textarea.form-control {
 
 @media (min-width: 1280px) {
   .ps-footer--contact .ps-footer__fax {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .ps-footer--contact .ps-footer__fax i {
@@ -18233,7 +18238,6 @@ html .bg--parallax {
 .flex-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 50px;
 }
 
@@ -18339,15 +18343,15 @@ html .bg--parallax {
 .ps-section__title {
   color: #333;
   font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 27px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .view-all {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .choose-option {
@@ -18370,7 +18374,7 @@ html .bg--parallax {
 .ps-product__meta em {
   font-style: normal;
   margin-right: 5px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .ps-home--1 {
@@ -18596,7 +18600,7 @@ html .bg--parallax {
 .ps-section--catg .catg-item a p {
   margin: 0;
   color: #333;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 7px;
 }
 
@@ -18655,3 +18659,7 @@ html .bg--parallax {
 .ps-section--catg .owl-carousel .owl-stage .owl-item.active:nth-child(14) .catg-item {
   background: #9c27b01a;
 } */
+
+.ps-header__right {
+  width: 100%;
+}
