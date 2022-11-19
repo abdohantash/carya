@@ -275,14 +275,14 @@
         $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();
             var innerWidth = $(window).innerWidth();
-            if (scroll > 200 && innerWidth > 760) {
-                $('.ps-header').addClass('ps-header--sticky');
-            } else if (scroll > 700 && innerWidth < 760) {
-                $('.ps-header').addClass('ps-header--sticky');
-                $('.ps-search--result').removeClass('active');
-            } else {
-                $('.ps-header').removeClass('ps-header--sticky')
-            }
+            // if (scroll > 200 && innerWidth > 760) {
+            //     $('.ps-header').addClass('ps-header--sticky');
+            // } else if (scroll > 700 && innerWidth < 760) {
+            //     $('.ps-header').addClass('ps-header--sticky');
+            //     $('.ps-search--result').removeClass('active');
+            // } else {
+            //     $('.ps-header').removeClass('ps-header--sticky')
+            // }
 
             if (scroll > 100) {
                 $('.scroll-top').show();
@@ -315,10 +315,9 @@
     }
 
     function subMenuToggle() {
-        $('.menu--mobile .sub-toggle').on('click', function(e) {
+        $('.menu--mobile li .parent-name').on('click', function(e) {
             e.preventDefault();
             var current = $(this).parent('li');
-            
             current.children('.sub-menu').slideToggle(350);
             current.siblings().find('.sub-menu').slideUp(350);
             current.toggleClass('active');
@@ -382,7 +381,6 @@
                 slidesToScroll: 1,
                 arrows: false,
                 dots: false,
-                lazyLoad: 'ondemand',
                 asNavFor: '.ps-gallery--image'
             });
 
@@ -393,24 +391,10 @@
             .slick({
                 slidesToShow: 5,
                 slidesToScroll: 1,
-                lazyLoad: 'ondemand',
                 asNavFor: '.ps-product--gallery .ps-product__thumbnail',
                 dots: false,
                 arrows: false,
                 focusOnSelect: true
-            });
-
-            //remove active class from all thumbnail slides
-            $('.ps-gallery--image .slick-slide').removeClass('slick-active');
-
-            //set active class to first thumbnail slides
-            $('.ps-gallery--image .slick-slide').eq(0).addClass('slick-active');
-
-            // On before slide change match active thumbnail to current slide
-            $('.ps-product--gallery .ps-product__thumbnail').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-                var mySlideNumber = nextSlide;
-                $('.ps-gallery--image .slick-slide').removeClass('slick-active');
-                $('.ps-gallery--image .slick-slide').eq(mySlideNumber).addClass('slick-active');
             });
         }
 
