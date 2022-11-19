@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
     <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
     <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
     <link rel="stylesheet" href="plugins/noUiSlider/nouislider.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -55,10 +54,20 @@
                             </div>
                             <ul class="ps-header__icons">
                                 <li>
-                                    <a class="ps-header__item account-btn" href="#" id="login-modal">
+                                    <a class="ps-header__item account-btn" href="login.html">
                                         <i class="icon-user"></i>
                                         <div class="log-acc">
                                             <span>Login / Sign up</span>
+                                            <p>My account</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- <li>
+                                    <a class="ps-header__item account-btn" href="#" id="login-modal">
+                                        <i class="icon-user"></i>
+                                        <div class="log-acc">
+                                            <span>Hello abdelrahman</span>
                                             <p>My account
                                                 <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8"
                                                     role="presentation">
@@ -69,19 +78,31 @@
                                         </div>
                                     </a>
                                     <div class="ps-login--modal">
-                                        <form method="get" action="http://nouthemes.net/html/mymedi/do_action">
-                                            <div class="form-group">
-                                                <label>Username or Email Address</label>
-                                                <input class="form-control" type="text">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Password</label>
-                                                <input class="form-control" type="password">
-                                            </div>
-                                            <button class="ps-btn ps-btn--warning" type="submit">Log In</button>
-                                        </form>
+                                        <ul class="drop-menu-profile">
+                                            <li>
+                                                <a href="my-account.html">
+                                                    <i class="icon-user"></i>
+                                                    My account</a>
+                                            </li>
+                                            <li>
+                                                <a href="orders.html">
+                                                    <i class="icon-bag2"></i>
+                                                    My orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="addresses.html" class="active">
+                                                    <i class="icon-map-marker"></i>
+                                                    My addresses</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <i class="icon-exit"></i>
+                                                    Logout</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </li>
+                                </li> -->
+
                                 <li><a class="ps-header__item cart-btn-header" href="#" id="cart-mini"><i
                                             class="icon-cart-empty"></i>
                                         <p>Cart</p>
@@ -96,7 +117,7 @@
                                                     <div class="ps-product__content"><a class="ps-product__name"
                                                             href="product-details.html">Mix Super Deluxe</a>
                                                         <p class="ps-product__meta"> <span
-                                                                class="ps-product__price">399.99 KD</span></p>
+                                                                class="ps-product__price">400.00 KD</span></p>
                                                     </div><a class="ps-product__remove" href="javascript: void(0)"><i
                                                             class="icon-cross"></i></a>
                                                 </div>
@@ -108,16 +129,16 @@
                                                     <div class="ps-product__content"><a class="ps-product__name"
                                                             href="product-details.html">Mix Kernels Extra</a>
                                                         <p class="ps-product__meta"> <span
-                                                                class="ps-product__sale">77.65 KD</span><span
-                                                                class="ps-product__is-price">80.65 KD</span></p>
+                                                                class="ps-product__sale">70.00 KD</span><span
+                                                                class="ps-product__is-price">80.00 KD</span></p>
                                                     </div><a class="ps-product__remove" href="javascript: void(0)"><i
                                                             class="icon-cross"></i></a>
                                                 </div>
                                             </li>
                                         </ul>
-                                        <div class="ps-cart__total"><span>Subtotal </span><span>399</span></div>
+                                        <div class="ps-cart__total"><span>Subtotal </span><span>470 KD</span></div>
                                         <div class="ps-cart__footer"><a class="ps-btn ps-btn--outline"
-                                                href="shopping-cart.html">View Cart</a><a class="ps-btn ps-btn--warning"
+                                                href="cart.html">View Cart</a><a class="ps-btn ps-btn--warning"
                                                 href="checkout.html">Checkout</a></div>
                                     </div>
                                 </li>
@@ -132,90 +153,90 @@
                     <div class="ps-navigation__left">
                         <nav class="ps-main-menu">
                             <ul class="menu">
-                                <li class="has-mega-menu"><a href="#">Nut Mixes</a></li>
+                                <li class="has-mega-menu"><a href="products.html">Nut Mixes</a></li>
                                 <li class="has-mega-menu">
-                                    <a href="#">Nuts & Kernels
+                                    <a href="products.html">Nuts & Kernels
                                         <span class="sub-toggle">
                                             <i class="fa fa-chevron-down"></i>
                                         </span>
                                     </a>
                                     <div class="mega-menu">
                                         <ul class="sub-menu--mega">
-                                            <li><a href="#">Nuts & Seeds</a></li>
-                                            <li><a href="#">Raw Nuts & Seeds</a></li>
-                                            <li><a href="#">Lifestyle Mixes</a></li>
-                                            <li><a href="#">Fruits & Nuts Mixes</a></li>
-                                            <li><a href="#">Sugared Nuts & Kernels</a></li>
-                                            <li><a href="#">Nuts Dragées</a></li>
-                                            <li><a href="#">Prepacks</a></li>
+                                            <li><a href="products.html">Nuts & Seeds</a></li>
+                                            <li><a href="products.html">Raw Nuts & Seeds</a></li>
+                                            <li><a href="products.html">Lifestyle Mixes</a></li>
+                                            <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                                            <li><a href="products.html">Sugared Nuts & Kernels</a></li>
+                                            <li><a href="products.html">Nuts Dragées</a></li>
+                                            <li><a href="products.html">Prepacks</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="has-mega-menu">
-                                    <a href="#">Confectionery
+                                    <a href="products.html">Confectionery
                                         <span class="sub-toggle">
                                             <i class="fa fa-chevron-down"></i>
                                         </span>
                                     </a>
                                     <div class="mega-menu">
                                         <ul class="sub-menu--mega">
-                                            <li><a href="#">Chocolates</a></li>
-                                            <li><a href="#">Malban & Nougat</a></li>
-                                            <li><a href="#">Marzipan</a></li>
-                                            <li><a href="#">Man Wa Salwa</a></li>
-                                            <li><a href="#">Gifts</a></li>
+                                            <li><a href="products.html">Chocolates</a></li>
+                                            <li><a href="products.html">Malban & Nougat</a></li>
+                                            <li><a href="products.html">Marzipan</a></li>
+                                            <li><a href="products.html">Man Wa Salwa</a></li>
+                                            <li><a href="products.html">Gifts</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="has-mega-menu">
-                                    <a href="#">Fruits
+                                    <a href="products.html">Fruits
                                         <span class="sub-toggle">
                                             <i class="fa fa-chevron-down"></i>
                                         </span>
                                     </a>
                                     <div class="mega-menu">
                                         <ul class="sub-menu--mega">
-                                            <li><a href="#">Dried Fruits</a></li>
-                                            <li><a href="#">Fruits & Nuts Mixes</a></li>
-                                            <li><a href="#">Dates</a></li>
-                                            <li><a href="#">Fruit Paste</a></li>
+                                            <li><a href="products.html">Dried Fruits</a></li>
+                                            <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                                            <li><a href="products.html">Dates</a></li>
+                                            <li><a href="products.html">Fruit Paste</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="has-mega-menu">
-                                    <a href="#">Healthy Choice
+                                    <a href="products.html">Healthy Choice
                                         <span class="sub-toggle">
                                             <i class="fa fa-chevron-down"></i>
                                         </span>
                                     </a>
                                     <div class="mega-menu">
                                         <ul class="sub-menu--mega">
-                                            <li><a href="#">Sugar Free Nut Bars</a></li>
-                                            <li><a href="#">Healthy Mixes</a></li>
-                                            <li><a href="#">Nut Butters</a></li>
-                                            <li><a href="#">Nut Flours</a></li>
-                                            <li><a href="#">Protein</a></li>
-                                            <li><a href="#">Super Seeds & Grains</a></li>
+                                            <li><a href="products.html">Sugar Free Nut Bars</a></li>
+                                            <li><a href="products.html">Healthy Mixes</a></li>
+                                            <li><a href="products.html">Nut Butters</a></li>
+                                            <li><a href="products.html">Nut Flours</a></li>
+                                            <li><a href="products.html">Protein</a></li>
+                                            <li><a href="products.html">Super Seeds & Grains</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="has-mega-menu">
-                                    <a href="#">Local & Traditional
+                                    <a href="products.html">Local & Traditional
                                         <span class="sub-toggle">
                                             <i class="fa fa-chevron-down"></i>
                                         </span>
                                     </a>
                                     <div class="mega-menu">
                                         <ul class="sub-menu--mega">
-                                            <li><a href="#">Oriental Sweets</a></li>
-                                            <li><a href="#">Thyme - Zaa'tar</a></li>
-                                            <li><a href="#">Aromatic Herbs & Spices</a></li>
-                                            <li><a href="#">Bakery</a></li>
+                                            <li><a href="products.html">Oriental Sweets</a></li>
+                                            <li><a href="products.html">Thyme - Zaa'tar</a></li>
+                                            <li><a href="products.html">Aromatic Herbs & Spices</a></li>
+                                            <li><a href="products.html">Bakery</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="has-mega-menu"><a href="#">Coffee & Tea</a></li>
-                                <li class="has-mega-menu"><a href="#">Our Selection </a></li>
+                                <li class="has-mega-menu"><a href="products.html">Coffee & Tea</a></li>
+                                <li class="has-mega-menu"><a href="products.html">Our Selection </a></li>
                             </ul>
                         </nav>
                     </div>
@@ -239,6 +260,7 @@
                 </div>
             </div>
         </header>
+
         <div class="ps-home ps-home--1">
             <section class="ps-section--banner">
                 <div class="container-fluid">
@@ -347,7 +369,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -374,7 +396,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -404,7 +426,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -431,7 +453,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -461,7 +483,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -506,7 +528,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -533,7 +555,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -563,7 +585,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -590,7 +612,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -620,7 +642,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -647,7 +669,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -677,7 +699,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -779,7 +801,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -806,7 +828,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -836,7 +858,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -863,7 +885,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -893,7 +915,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -920,7 +942,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -950,7 +972,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -995,7 +1017,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -1022,7 +1044,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -1052,7 +1074,7 @@
                                                 <span class="ps-product__price sale">77.65 KD</span>
                                                 <span class="ps-product__del">80.65 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -1079,7 +1101,7 @@
                                                 <em>From</em>
                                                 <span class="ps-product__price">30.00 KD</span>
                                             </div>
-                                            
+
                                             <a href="product-details.html" class="choose-option">Choose options</a>
                                         </div>
                                     </div>
@@ -1172,7 +1194,7 @@
                         </div>
                     </div>
                 </section>
- 
+
                 <section class="promo-part">
                     <div class="container-fluid">
                         <div class="row">
@@ -1193,16 +1215,15 @@
                 </section>
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="ps-delivery" data-background="img/banner-delivery-2.jpg">
-                <div class="ps-delivery__content">
-                    <div class="ps-delivery__text"> <i class="icon-shield-check"></i><span> <strong>100% Secure
-                                delivery </strong>without contacting the courier</span></div>
+        <footer class="ps-footer ps-footer--1">
+            <div class="container-fluid">
+                <div class="ps-delivery" data-background="img/banner-delivery-2.jpg">
+                    <div class="ps-delivery__content">
+                        <div class="ps-delivery__text"> <i class="icon-shield-check"></i><span> <strong>100% Secure
+                                    delivery </strong>without contacting the courier</span></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer class="ps-footer ps-footer--1">
             <div class="ps-footer--top">
                 <div class="container-fluid">
                     <div class="row m-0">
@@ -1235,8 +1256,7 @@
                                         </div>
                                         <div class="ps-footer__title">Our store</div>
                                         <p>Al-Rai- 5th Ring Road- Ghazali Street , Kuwait</p>
-                                        <p><a target="_blank"
-                                                href="https://goo.gl/maps/bib2Y4JwNpz6RWsD7">Show
+                                        <p><a target="_blank" href="https://goo.gl/maps/bib2Y4JwNpz6RWsD7">Show
                                                 on map</a></p>
                                         <ul class="ps-social">
                                             <li><a class="ps-social__link facebook" href="#"><i class="fa fa-facebook">
@@ -1278,10 +1298,10 @@
                                         <h5 class="ps-block__title">Information</h5>
                                         <ul class="ps-block__list">
                                             <li><a href="about-us.html">About us</a></li>
-                                            <li><a href="#">Delivery information</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Sales</a></li>
-                                            <li><a href="#">Terms &amp; Conditions</a></li>
+                                            <li><a href="static-page.html">Delivery information</a></li>
+                                            <li><a href="static-page.html">Privacy Policy</a></li>
+                                            <li><a href="static-page.html">Sales</a></li>
+                                            <li><a href="static-page.html">Terms &amp; Conditions</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1289,11 +1309,10 @@
                                     <div class="ps-footer--block">
                                         <h5 class="ps-block__title">Account</h5>
                                         <ul class="ps-block__list">
-                                            <li><a href="#">My account</a></li>
-                                            <li><a href="#">My orders</a></li>
-                                            <li><a href="#">Returns</a></li>
-                                            <li><a href="#">Shipping</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                            <li><a href="my-account.html">My account</a></li>
+                                            <li><a href="orders.html">My orders</a></li>
+                                            <li><a href="static-page.html">Returns</a></li>
+                                            <li><a href="static-page.html">Shipping</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1301,11 +1320,11 @@
                                     <div class="ps-footer--block">
                                         <h5 class="ps-block__title">Store</h5>
                                         <ul class="ps-block__list">
-                                            <li><a href="#">Affiliate</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Discount</a></li>
-                                            <li><a href="#">Latest products</a></li>
-                                            <li><a href="#">Sale</a></li>
+                                            <li><a href="products.html">Affiliate</a></li>
+                                            <li><a href="products.html">Bestsellers</a></li>
+                                            <li><a href="products.html">Discount</a></li>
+                                            <li><a href="products.html">Latest products</a></li>
+                                            <li><a href="products.html">Sale</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1324,9 +1343,10 @@
             </div>
         </footer>
     </div>
+
     <div class="ps-search">
-        <div class="ps-search__content ps-search--mobile"><a class="ps-search__close" href="#" id="close-search"><i
-                    class="icon-cross"></i></a>
+        <div class="ps-search__content ps-search--mobile">
+            <a class="ps-search__close" href="#" id="close-search"><i class="icon-cross"></i></a>
             <h3>Search</h3>
             <form action="http://nouthemes.net/html/mymedi/do_action" method="post">
                 <div class="ps-search-table">
@@ -1344,133 +1364,78 @@
                     class="icon-cross"></i></a></div>
         <div class="ps-nav__item"><a href="index.html"><i class="icon-home2"></i></a></div>
         <div class="ps-nav__item"><a href="my-account.html"><i class="icon-user"></i></a></div>
-        <div class="ps-nav__item"><a href="wishlist.html"><i class="fa fa-heart-o"></i><span class="badge">3</span></a>
+        <div class="ps-nav__item"><a href="cart.html"><i class="icon-cart-empty"></i><span class="badge">2</span></a>
         </div>
-        <div class="ps-nav__item"><a href="shopping-cart.html"><i class="icon-cart-empty"></i><span
-                    class="badge">2</span></a></div>
     </div>
 
     <div class="ps-menu--slidebar">
         <div class="ps-menu__content">
             <ul class="menu--mobile">
-                <li class="menu-item-has-children"><a href="#">Products</a><span class="sub-toggle"><i
-                            class="fa fa-chevron-down"></i></span>
+                <li class="menu-item-has-children"><a href="products.html">Nut Mixes</a></li>
+                <li class="menu-item-has-children"><a href="products.html">Nuts & Kernels</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
                     <ul class="sub-menu">
-                        <li><a href="#">Wound Care</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
-                            <ul class="sub-menu">
-                                <li><a href="category-list.html">Bandages</a></li>
-                                <li><a href="category-list.html">Gypsum foundations</a></li>
-                                <li><a href="category-list.html">Patches and tapes</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Higiene</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
-                            <ul class="sub-menu">
-                                <li><a href="category-list.html">Disposable products</a></li>
-                                <li><a href="category-list.html">Face masks</a></li>
-                                <li><a href="category-list.html">Gloves</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Laboratory</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
-                            <ul class="sub-menu">
-                                <li><a href="category-list.html">Devices</a></li>
-                                <li><a href="category-list.html">Diagnostic tests</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="products.html">Nuts & Seeds</a></li>
+                        <li><a href="products.html">Raw Nuts & Seeds</a></li>
+                        <li><a href="products.html">Lifestyle Mixes</a></li>
+                        <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                        <li><a href="products.html">Sugared Nuts & Kernels</a></li>
+                        <li><a href="products.html">Nuts Dragées</a></li>
+                        <li><a href="products.html">Prepacks</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children"><a href="#">Home Medical Supplies</a><span class="sub-toggle"><i
-                            class="fa fa-chevron-down"></i></span>
+                <li class="menu-item-has-children"><a href="products.html">Confectionery</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
                     <ul class="sub-menu">
-                        <li><a href="category-list.html">Diagnosis</a></li>
-                        <li><a href="category-list.html">Accessories Tools</a></li>
-                        <li><a href="category-list.html">Bandages</a></li>
+                        <li><a href="products.html">Chocolates</a></li>
+                        <li><a href="products.html">Malban & Nougat</a></li>
+                        <li><a href="products.html">Marzipan</a></li>
+                        <li><a href="products.html">Man Wa Salwa</a></li>
+                        <li><a href="products.html">Gifts</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children"><a href="#">Homepages</a><span class="sub-toggle"><i
-                            class="fa fa-chevron-down"></i></span>
+                <li class="menu-item-has-children"><a href="products.html">Fruits</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
                     <ul class="sub-menu">
-                        <li><a href="index.html">Home 01</a></li>
-                        <li><a href="home2.html">Home 02</a></li>
-                        <li><a href="home3.html">Home 03</a></li>
-                        <li><a href="home4.html">Home 04</a></li>
-                        <li><a href="home5.html">Home 05</a></li>
-                        <li><a href="home6.html">Home 06</a></li>
-                        <li><a href="home7.html">Home 07</a></li>
-                        <li><a href="home8.html">Home 08</a></li>
-                        <li><a href="home9.html">Home 09</a></li>
-                        <li><a href="home10.html">Home 10</a></li>
-                        <li><a href="home11.html">Home 11</a></li>
-                        <li><a href="home12.html">Home 12</a></li>
-                        <li><a href="home13.html">Home 13</a></li>
-                        <li><a href="home14.html">Home 14</a></li>
-                        <li><a href="home15.html">Home 15</a></li>
+                        <li><a href="products.html">Dried Fruits</a></li>
+                        <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                        <li><a href="products.html">Dates</a></li>
+                        <li><a href="products.html">Fruit Paste</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children"><a href="category-list.html">Shop</a></li>
-                <li class="menu-item-has-children"><a href="#">Pages</a><span class="sub-toggle"><i
-                            class="fa fa-chevron-down"></i></span>
+                <li class="menu-item-has-children"><a href="products.html">Healthy Choice</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
                     <ul class="sub-menu">
-                        <li><a href="#">Category</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
-                            <ul class="sub-menu">
-                                <li><a href="category-grid.html">Grid</a></li>
-                                <li><a href="category-grid-detail.html">Grid with details</a></li>
-                                <li><a href="category-grid-green.html">Grid with header green</a></li>
-                                <li><a href="category-grid-dark.html">Grid with header dark</a></li>
-                                <li><a href="category-grid-separate.html">Grid separate</a></li>
-                                <li><a href="category-list.html">List</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Product</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
-                            <ul class="sub-menu">
-                                <li><a href="product1.html">Layout 01</a></li>
-                                <li><a href="product2.html">Layout 02</a></li>
-                                <li><a href="product3.html">Layout 03</a></li>
-                                <li><a href="product4.html">Layout 04</a></li>
-                                <li><a href="product5.html">Layout 05</a></li>
-                                <li><a href="product6.html">Layout 06</a></li>
-                                <li><a href="product7.html">Layout 07</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pages</a><span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
-                            <ul class="sub-menu">
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="about-us.html">About us</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="coming-soon-v1.html">Coming soon 1</a></li>
-                                <li><a href="coming-soon-v2.html">Coming soon 2</a></li>
-                                <li><a href="blog-post1.html">Blog post 1</a></li>
-                                <li><a href="blog-post2.html">Blog post 2</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="products.html">Sugar Free Nut Bars</a></li>
+                        <li><a href="products.html">Healthy Mixes</a></li>
+                        <li><a href="products.html">Nut Butters</a></li>
+                        <li><a href="products.html">Nut Flours</a></li>
+                        <li><a href="products.html">Protein</a></li>
+                        <li><a href="products.html">Super Seeds & Grains</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children"><a href="#">Collection</a><span class="sub-toggle"><i
-                            class="fa fa-chevron-down"></i></span>
+                <li class="menu-item-has-children"><a href="products.html">Local & Traditional</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
                     <ul class="sub-menu">
-                        <li><a href="category-list.html">Face masks</a></li>
-                        <li><a href="category-list.html">Dental</a></li>
-                        <li><a href="category-list.html">Micrscope</a></li>
+                        <li><a href="products.html">Oriental Sweets</a></li>
+                        <li><a href="products.html">Thyme - Zaa'tar</a></li>
+                        <li><a href="products.html">Aromatic Herbs & Spices</a></li>
+                        <li><a href="products.html">Bakery</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children"><a href="blog-sidebar1.html">Blog</a></li>
-                <li class="menu-item-has-children"><a href="contact-us.html">Contact</a></li>
+                <li class="menu-item-has-children"><a href="products.html">Coffee & Tea</a></li>
+                <li class="menu-item-has-children"><a href="products.html">Our Selection</a></li>
             </ul>
         </div>
+
         <div class="ps-menu__footer">
             <div class="ps-menu__item">
                 <ul class="ps-language-currency">
-                    <li class="menu-item-has-children"><a href="#">English</a><span class="sub-toggle"><i
-                                class="fa fa-chevron-down"></i></span>
+                    <li class="menu-item-has-children"><a href="#" class="lang-a">English</a>
+                        <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
                         <ul class="sub-menu">
-                            <li><a href="#">Français</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"><a href="#">USD</a><span class="sub-toggle"><i
-                                class="fa fa-chevron-down"></i></span>
-                        <ul class="sub-menu">
-                            <li><a href="#">USD</a></li>
-                            <li><a href="#">EUR</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Arabic</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1485,7 +1450,7 @@
         <div class="ps-preloader-section ps-preloader-right"></div>
     </div>
 
-    <div class="modal fade" id="popupQuickview" data-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="popupQuickview">
         <div class="modal-dialog modal-xl modal-dialog-centered ps-quickview">
             <div class="modal-content">
                 <div class="modal-body">
@@ -1587,7 +1552,7 @@
                                         </div>
                                         <div class="btn-add-buy">
                                             <a class="ps-btn ps-btn--warning" href="#">Add to cart</a>
-                                            <a class="ps-btn ps-btn--danger" href="#">Buy it now</a>
+                                            <a class="ps-btn ps-btn--danger" href="checkout.html">Buy it now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1599,8 +1564,7 @@
         </div>
     </div>
 
-
-    <div class="modal fade" id="popupLanguage" data-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="popupLanguage">
         <div class="modal-dialog modal-dialog-centered ps-popup--select">
             <div class="modal-content">
                 <div class="modal-body">
@@ -1616,6 +1580,73 @@
                                         data-value="Arabic">Arabic</a></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="address">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg
+                            class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+                            <path
+                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class="ps-popup__body">
+                        <h2 class="ps-popup__title">Add a new address</h2>
+                        <p>Please fill in the information below</p>
+
+                        <div class="row custom-input">
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">First name</label>
+                                    <input class="ps-input" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Last name</label>
+                                    <input class="ps-input" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Phone</label>
+                                    <input class="ps-input" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Address</label>
+                                    <input class="ps-input" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Governorate</label>
+                                    <select name="zone" class="select2">
+                                        <option value="KW-AH">Al Ahmadi</option>
+                                        <option value="KW-KU">Al Asimah</option>
+                                        <option value="KW-FA">Al Farwaniyah</option>
+                                        <option value="KW-JA">Al Jahra</option>
+                                        <option value="KW-HA">Hawalli</option>
+                                        <option value="KW-MU">Mubarak Al-Kabeer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" value=""
+                                        id="check"><label class="form-check-label" for="check">Set as default
+                                        address</label></div>
+                            </div>
+                        </div>
+                        <button type="button" class="ps-btn ps-btn--primary">Add a new address</button>
                     </div>
                 </div>
             </div>

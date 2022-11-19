@@ -160,7 +160,7 @@
             $('.ps-categogy__main').removeClass('active');
         });
 
-        $('.js-example-basic-single').select2({
+        $('.select2').select2({
             dropdownCssClass: "ps-dropdown-input"
         });
 
@@ -173,7 +173,7 @@
             event.preventDefault();
             $(this).toggleClass('fa-eye');
             $(this).toggleClass('fa-eye-slash');
-            var parent = $(this).parent().parent();
+            var parent = $(this).parent();
             var type = parent.find('input').attr('type') == 'password' ? 'text' : 'password';
             parent.find('input').attr('type', type);
         });
@@ -315,18 +315,27 @@
     }
 
     function subMenuToggle() {
-        $('.menu--mobile li .parent-name').on('click', function(e) {
+        $('.ps-widget--product .menu--mobile li .parent-name').on('click', function(e) {
             e.preventDefault();
             var current = $(this).parent('li');
             current.children('.sub-menu').slideToggle(350);
             current.siblings().find('.sub-menu').slideUp(350);
+            current.siblings().removeClass('active');
             current.toggleClass('active');
         });
 
-        $('.ps-language-currency .sub-toggle').on('click', function(e) {
+        $('.ps-menu--slidebar .menu--mobile li .sub-toggle').on('click', function(e) {
             e.preventDefault();
             var current = $(this).parent('li');
-            
+            current.children('.sub-menu').slideToggle(350);
+            current.siblings().find('.sub-menu').slideUp(350);
+            current.siblings().removeClass('active');
+            current.toggleClass('active');
+        });
+
+        $('.ps-language-currency .lang-a').on('click', function(e) {
+            e.preventDefault();
+            var current = $(this).parent('li');
             current.children('.sub-menu').slideToggle(350);
             current.toggleClass('active');
         });
