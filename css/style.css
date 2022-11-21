@@ -3473,7 +3473,7 @@ textarea.form-control {
 }
 
 .ps-product__price {
-  color: #333;
+  color: #cc5d35;
   font-size: 19px;
 }
 
@@ -12525,6 +12525,7 @@ textarea.form-control {
   line-height: 26px;
   min-width: 100px;
   text-align: right;
+  color: #333;
 }
 
 .ps-checkout .ps-product__name {
@@ -18641,10 +18642,12 @@ html .bg--parallax {
 
 .ps-checkout .ps-checkout__row.bold * {
   font-weight: bold;
+  font-size: 18px;
 }
 
 .ps-checkout .ps-checkout__row.bold .ps-product__price {
   font-size: 18px;
+  color: #cc5d35;
 }
 
 .ps-checkout .ps-breadcrumb__item {
@@ -20494,8 +20497,8 @@ ul {
     padding: 12px;
   }
 
-  .ps-checkout .ps-checkout__row.bold .ps-product__price {
-    font-size: 15px;
+  .ps-checkout .ps-checkout__row.bold * {
+    font-size: 15px !important;
   }
 
   .ps-checkout .ps-product__price {
