@@ -19191,6 +19191,10 @@ ul {
   max-height: 230px;
 }
 
+.content * {
+  word-break: break-word;
+}
+
 /* abdo */
 
 @media (max-width:1300px) {
@@ -19924,6 +19928,11 @@ ul {
 
   .user-form-part .form-control {
     padding: 10px 15px;
+  }
+
+  .ps-checkout .ps-checkout__content .flex-rev {
+    flex-direction: column-reverse;
+    gap: 15px;
   }
 }
 
