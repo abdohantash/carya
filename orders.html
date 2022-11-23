@@ -301,36 +301,51 @@
                                         <th>Order #</th>
                                         <th class="ps-product__name" colspan="2">Product</th>
                                         <th class="ps-product__quantity">Quantity</th>
+                                        <th class="ps-product__status">Status</th>
                                         <th class="ps-product__subtotal">Subtotal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>#154</td>
-                                        <td class="ps-product__thumbnail"><a class="ps-product__image" href="product-details.html">
+                                        <td class="ps-product__thumbnail"><a class="ps-product__image"
+                                                href="product-details.html">
                                                 <figure><img src="img/products/1.webp" alt=""></figure>
                                             </a></td>
                                         <td class="ps-product__name"> <a href="products.html">Malban Mix - Regular /
-                                                1 Kg (2.2lb)</a>
+                                                500g</a>
                                             <div>
                                                 <span class="ps-product__price">399.99 KD</span>
                                             </div>
                                         </td>
                                         <td class="text-center">1</td>
+                                        <td>
+                                            <span class="status-span bg-warning">Waiting</span>
+                                            <!-- <span class="status-span bg-info">in progress</span>
+                                            <span class="status-span bg-success">Delivared</span>
+                                            <span class="status-span bg-danger">Canceled</span> -->
+                                        </td>
                                         <td class="ps-product__subtotal">399.99 KD</td>
                                     </tr>
                                     <tr>
                                         <td>#154</td>
-                                        <td class="ps-product__thumbnail"><a class="ps-product__image" href="product-details.html">
+                                        <td class="ps-product__thumbnail"><a class="ps-product__image"
+                                                href="product-details.html">
                                                 <figure><img src="img/products/2.webp" alt=""></figure>
                                             </a></td>
                                         <td class="ps-product__name"> <a href="products.html">Malban Mix - Regular /
-                                                1 Kg (2.2lb)</a>
+                                                500g</a>
                                             <div>
                                                 <span class="ps-product__price">399.99 KD</span>
                                             </div>
                                         </td>
                                         <td class="text-center">1</td>
+                                        <td>
+                                            <!-- <span class="status-span bg-warning">Waiting</span>
+                                            <span class="status-span bg-info">in progress</span>
+                                            <span class="status-span bg-success">Delivared</span> -->
+                                            <span class="status-span bg-danger">Canceled</span>
+                                        </td>
                                         <td class="ps-product__subtotal">399.99 KD</td>
                                     </tr>
                                 </tbody>
@@ -479,7 +494,12 @@
                         <div class="col-12 col-md-6">
                             <p>Copyright © 2022 Carya. All Rights Reserved</p>
                         </div>
-                        <div class="col-12 col-md-6 text-right"><img src="img/payment.png" alt></div>
+                        <div class="col-12 col-md-6 flex-payment">
+                            <img src="img/KNET.svg" alt="">
+                            <img src="img/visa.png" alt="">
+                            <img src="img/mastercard.png" alt="">
+                            <img src="img/cash.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -651,33 +671,31 @@
                                         <div class="ps-product__title"><a href="#">Walnuts Super Extra</a></div>
                                         <div class="ps-product__desc">
                                             <span class="product-form__option-name">Sold and packed in:
-                                                <span class="product-form__selected-value">500g (1.1lb)</span>
+                                                <span class="product-form__selected-value">250g</span>
                                             </span>
                                             <div class="flex-choose">
                                                 <div class="radio-label">
                                                     <input type="radio" name="radio" id="one" checked>
                                                     <label for="one">
-                                                        500g (1.1lb)
+                                                        250g
                                                     </label>
                                                 </div>
                                                 <div class="radio-label">
                                                     <input type="radio" name="radio" id="two">
                                                     <label for="two">
-                                                        1 Kg (2.2lb)
+                                                        500g
                                                     </label>
                                                 </div>
                                                 <div class="radio-label">
                                                     <input type="radio" name="radio" id="three" disabled>
                                                     <label for="three">
-                                                        2 Kg (4.4lb)
+                                                        1 Kg
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="ps-product__meta"><span class="ps-product__price">77.65 KD</span>
                                         </div>
-                                        <p class="product-form__price-info">
-                                            Tax included <a href="#">Shipping calculated</a> at checkout</p>
                                         <div class="ps-product__quantity">
                                             <h6>Quantity</h6>
                                             <div class="def-number-input number-input safari_only">
@@ -733,8 +751,7 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close">
-                        <svg
-                            class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+                        <svg class="icon icon--close" viewBox="0 0 19 19" role="presentation">
                             <path
                                 d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
                                 fill="currentColor" fill-rule="evenodd"></path>

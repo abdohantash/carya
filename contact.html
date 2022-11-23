@@ -246,22 +246,63 @@
                     <li class="ps-breadcrumb__item"><a href="index.html">Home</a></li>
                     <li class="ps-breadcrumb__item active" aria-current="page">Contact Us</li>
                 </ul>
-                <div class="contact-us-div">
-                    <div class="custom-container">
-                        <div class="col-12">
-                            <img class="con-img" alt="" src="img/contact-us.png">
+                <div class="contact-flex">
+                    <div class="contact-us-div">
+                        <div class="custom-container">
+                            <div class="col-12">
+                                <img class="con-img" alt="" src="img/contact-us.png">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <p>For inquiries regarding your
+                                    <strong>order on Carya.com, account or Carya online experiences</strong></p>
+                                <h1>Call our call center at: <span style="color: #cc5d35;">5555
+                                        4444</span></h1>
+                                <h1>Or email us at: <span><a style="color: #cc5d35;"
+                                            href="mailto:contact@example.com ">contact@example.com </a></span></h1>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-12 text-center">
-                            <p>For inquiries regarding your
-                                <strong>order on Carya.com, account or Carya online experiences</strong></p>
-                            <h1 style="text-align: center;">Call our call center at: <span
-                                    style="color: #cc5d35;">5555 4444</span></h1>
-                            <h1>Or email us at: <span><a style="color: #cc5d35;"
-                                        href="mailto:contact@example.com ">contact@example.com </a></span></h1>
+                    <form action="" method="post">
+                        <div class="ps-form--contact">
+                            <h2 class="ps-form__title">Fill up the form if you have any question</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="ps-form__group">
+                                        <input class="form-control ps-form__input" type="text"
+                                            placeholder="Name and Surname">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="ps-form__group">
+                                        <input class="form-control ps-form__input" type="email"
+                                            placeholder="Your E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="ps-form__group">
+                                        <input class="form-control ps-form__input" type="text" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="ps-form__group">
+                                        <textarea class="form-control ps-form__textarea" rows="5"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 ps-form__group">
+                                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                                    </div>
+                                    <script src="https://www.google.com/recaptcha/api.js" async defer>
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="ps-form__submit">
+                                <button class="ps-btn ps-btn--warning">Send message</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -388,7 +429,12 @@
                         <div class="col-12 col-md-6">
                             <p>Copyright © 2022 Carya. All Rights Reserved</p>
                         </div>
-                        <div class="col-12 col-md-6 text-right"><img src="img/payment.png" alt></div>
+                        <div class="col-12 col-md-6 flex-payment">
+                            <img src="img/KNET.svg" alt="">
+                            <img src="img/visa.png" alt="">
+                            <img src="img/mastercard.png" alt="">
+                            <img src="img/cash.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -560,33 +606,31 @@
                                         <div class="ps-product__title"><a href="#">Walnuts Super Extra</a></div>
                                         <div class="ps-product__desc">
                                             <span class="product-form__option-name">Sold and packed in:
-                                                <span class="product-form__selected-value">500g (1.1lb)</span>
+                                                <span class="product-form__selected-value">250g</span>
                                             </span>
                                             <div class="flex-choose">
                                                 <div class="radio-label">
                                                     <input type="radio" name="radio" id="one" checked>
                                                     <label for="one">
-                                                        500g (1.1lb)
+                                                        250g
                                                     </label>
                                                 </div>
                                                 <div class="radio-label">
                                                     <input type="radio" name="radio" id="two">
                                                     <label for="two">
-                                                        1 Kg (2.2lb)
+                                                        500g
                                                     </label>
                                                 </div>
                                                 <div class="radio-label">
                                                     <input type="radio" name="radio" id="three" disabled>
                                                     <label for="three">
-                                                        2 Kg (4.4lb)
+                                                        1 Kg
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="ps-product__meta"><span class="ps-product__price">77.65 KD</span>
                                         </div>
-                                        <p class="product-form__price-info">
-                                            Tax included <a href="#">Shipping calculated</a> at checkout</p>
                                         <div class="ps-product__quantity">
                                             <h6>Quantity</h6>
                                             <div class="def-number-input number-input safari_only">
