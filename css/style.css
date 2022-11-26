@@ -18129,6 +18129,11 @@ html .bg--parallax {
   object-fit: cover;
 }
 
+.ps-section--banner .ps-banner video {
+  width: 100%;
+    height: 100%;
+}
+
 .ps-section--banner {
   margin-bottom: 40px;
 }
