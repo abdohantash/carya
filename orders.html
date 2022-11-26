@@ -298,11 +298,14 @@
                             <table class="table ps-table ps-table--product">
                                 <thead>
                                     <tr>
-                                        <th>Order #</th>
+                                        <th># Order</th>
                                         <th class="ps-product__name" colspan="2">Product</th>
                                         <th class="ps-product__quantity">Quantity</th>
                                         <th class="ps-product__status">Status</th>
                                         <th class="ps-product__subtotal">Subtotal</th>
+                                        <th class="invoice">
+                                            Invoice
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -321,11 +324,14 @@
                                         <td class="text-center">1</td>
                                         <td>
                                             <span class="status-span bg-warning">Waiting</span>
-                                            <!-- <span class="status-span bg-info">in progress</span>
-                                            <span class="status-span bg-success">Delivared</span>
-                                            <span class="status-span bg-danger">Canceled</span> -->
                                         </td>
                                         <td class="ps-product__subtotal">399.99 KD</td>
+                                        <td>
+                                            <div class="flex-invoice">
+                                                <a href="invoice.html" target="_blank" class="show-invoice">show</a>
+                                                <a href="#" class="download-invoice" download="">download</a>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>#154</td>
@@ -341,12 +347,63 @@
                                         </td>
                                         <td class="text-center">1</td>
                                         <td>
-                                            <!-- <span class="status-span bg-warning">Waiting</span>
-                                            <span class="status-span bg-info">in progress</span>
-                                            <span class="status-span bg-success">Delivared</span> -->
+                                            <span class="status-span bg-info">Shipping</span>
+                                        </td>
+                                        <td class="ps-product__subtotal">399.99 KD</td>
+                                        <td>
+                                            <div class="flex-invoice">
+                                                <a href="invoice.html" target="_blank" class="show-invoice">show</a>
+                                                <a href="#" class="download-invoice" download="">download</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#154</td>
+                                        <td class="ps-product__thumbnail"><a class="ps-product__image"
+                                                href="product-details.html">
+                                                <figure><img src="img/products/2.webp" alt=""></figure>
+                                            </a></td>
+                                        <td class="ps-product__name"> <a href="products.html">Malban Mix - Regular /
+                                                500g</a>
+                                            <div>
+                                                <span class="ps-product__price">399.99 KD</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">1</td>
+                                        <td>
+                                            <span class="status-span bg-success">Delivared</span>
+                                        </td>
+                                        <td class="ps-product__subtotal">399.99 KD</td>
+                                        <td>
+                                            <div class="flex-invoice">
+                                                <a href="invoice.html" target="_blank" class="show-invoice">show</a>
+                                                <a href="#" class="download-invoice" download="">download</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#154</td>
+                                        <td class="ps-product__thumbnail"><a class="ps-product__image"
+                                                href="product-details.html">
+                                                <figure><img src="img/products/2.webp" alt=""></figure>
+                                            </a></td>
+                                        <td class="ps-product__name"> <a href="products.html">Malban Mix - Regular /
+                                                500g</a>
+                                            <div>
+                                                <span class="ps-product__price">399.99 KD</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">1</td>
+                                        <td>
                                             <span class="status-span bg-danger">Canceled</span>
                                         </td>
                                         <td class="ps-product__subtotal">399.99 KD</td>
+                                        <td>
+                                            <div class="flex-invoice">
+                                                <a href="invoice.html" target="_blank" class="show-invoice">show</a>
+                                                <a href="#" class="download-invoice" download="">download</a>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -498,7 +555,7 @@
                             <img src="img/KNET.svg" alt="">
                             <img src="img/visa.png" alt="">
                             <img src="img/mastercard.png" alt="">
-                            <img src="img/cash.png" alt="">
+                            <img src="img/cash.svg" alt="">
                         </div>
                     </div>
                 </div>

@@ -278,22 +278,6 @@
                             <div class="ps-checkout__form">
                                 <h3>Shipping Address</h3>
                                 <div class="row">
-                                    <div class="col-12 col-md-12">
-                                        <div class="ps-checkout__group">
-                                            <label class="ps-checkout__label">Full name</label>
-                                            <input class="ps-input" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="ps-checkout__group">
-                                            <label class="ps-checkout__label">Country</label>
-                                            <select name="zone" class="select2">
-                                                <option value="0" disabled selected>- Chosse -</option>
-                                                <option value="1">Kuwait</option>
-                                                <option value="2">saudi</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                     <div class="col-12 col-md-6">
                                         <div class="ps-checkout__group">
                                             <label class="ps-checkout__label">City</label>
@@ -434,16 +418,43 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
+                                        <div class="ps-checkout__group mb-0">
+                                            <label class="ps-checkout__label">Order notes (optional)</label>
+                                            <textarea class="ps-textarea" rows="4"
+                                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        </div>
+                                        <hr>
+                                    </div>   
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Full name</label>
+                                            <input class="ps-input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
                                         <div class="ps-checkout__group">
                                             <label class="ps-checkout__label">Phone</label>
                                             <input class="ps-input" type="number">
                                         </div>
                                     </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">E-mail</label>
+                                            <input class="ps-input" type="email">
+                                        </div>
+                                    </div>
                                     <div class="col-12">
-                                        <div class="ps-checkout__group mb-0">
-                                            <label class="ps-checkout__label">Order notes (optional)</label>
-                                            <textarea class="ps-textarea" rows="4"
-                                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        <div class="ps-checkout__group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="create-account">
+                                                <label class="form-check-label" for="create-account">Register Now</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ps-hidden" data-for="create-account">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Create account password</label>
+                                            <input class="form-control ps-input" type="password" placeholder="Password">
                                         </div>
                                     </div>
                                 </div>
@@ -683,7 +694,7 @@
                         <img src="img/KNET.svg" alt="">
                         <img src="img/visa.png" alt="">
                         <img src="img/mastercard.png" alt="">
-                        <img src="img/cash.png" alt="">
+                        <img src="img/cash.svg" alt="">
                     </div>
                 </div>
             </div>

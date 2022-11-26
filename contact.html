@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
     <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
     <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
     <link rel="stylesheet" href="plugins/noUiSlider/nouislider.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,6 +46,44 @@
                                             <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
+                                        <div class="search-bar__inner">
+                                                    <p class="search-bar__menu-title heading">Main Menu</p>
+                                                    <ul class="search-bar__menu-ul list list--unstyled">
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Nut Mixes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Nuts &amp; Kernels</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Confectionery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Fruits</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Healthy Choice</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Local &amp;
+                                                                Traditional</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Coffee &amp; Tea</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="products.html"
+                                                                class="search-bar__menu-link">Our Selection </a>
+                                                        </li>
+                                                    </ul>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -55,10 +92,20 @@
                             </div>
                             <ul class="ps-header__icons">
                                 <li>
-                                    <a class="ps-header__item account-btn" href="#" id="login-modal">
+                                    <a class="ps-header__item account-btn" href="login.html">
                                         <i class="icon-user"></i>
                                         <div class="log-acc">
                                             <span>Login / Sign up</span>
+                                            <p>My account</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- <li>
+                                    <a class="ps-header__item account-btn" href="#" id="login-modal">
+                                        <i class="icon-user"></i>
+                                        <div class="log-acc">
+                                            <span>Hello abdelrahman</span>
                                             <p>My account
                                                 <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8"
                                                     role="presentation">
@@ -69,19 +116,31 @@
                                         </div>
                                     </a>
                                     <div class="ps-login--modal">
-                                        <form method="get" action="http://nouthemes.net/html/mymedi/do_action">
-                                            <div class="form-group">
-                                                <label>Username or Email Address</label>
-                                                <input class="form-control" type="text">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Password</label>
-                                                <input class="form-control" type="password">
-                                            </div>
-                                            <button class="ps-btn ps-btn--warning" type="submit">Log In</button>
-                                        </form>
+                                        <ul class="drop-menu-profile">
+                                            <li>
+                                                <a href="my-account.html">
+                                                    <i class="icon-user"></i>
+                                                    My account</a>
+                                            </li>
+                                            <li>
+                                                <a href="orders.html">
+                                                    <i class="icon-bag2"></i>
+                                                    My orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="addresses.html" class="active">
+                                                    <i class="icon-map-marker"></i>
+                                                    My addresses</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <i class="icon-exit"></i>
+                                                    Logout</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </li>
+                                </li> -->
+
                                 <li><a class="ps-header__item cart-btn-header" href="cart.html" id="cart-mini"><i
                                             class="icon-cart-empty"></i>
                                         <p>Cart</p>
@@ -264,45 +323,52 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" method="post">
-                        <div class="ps-form--contact">
-                            <h2 class="ps-form__title">Fill up the form if you have any question</h2>
-                            <div class="row">
-                                <div class="col-12 col-md-4">
-                                    <div class="ps-form__group">
-                                        <input class="form-control ps-form__input" type="text"
-                                            placeholder="Name and Surname">
+                    <div class="map-div">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27814.422039668418!2d47.99937637067242!3d29.37606405632667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c83ce455983%3A0xc3ebaef5af09b90e!2z2YXYr9mK2YbYqSDYp9mE2YPZiNmK2KrYjCDYp9mE2YPZiNmK2KrigI4!5e0!3m2!1sar!2seg!4v1669457026048!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-9 col-12">
+                        <form action="" method="post">
+                            <div class="ps-form--contact">
+                                <h2 class="ps-form__title">Fill up the form if you have any question</h2>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="ps-form__group">
+                                            <input class="form-control ps-form__input" type="text"
+                                                placeholder="Name and Surname">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="ps-form__group">
+                                            <input class="form-control ps-form__input" type="email"
+                                                placeholder="Your E-mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="ps-form__group">
+                                            <input class="form-control ps-form__input" type="text" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="ps-form__group">
+                                            <textarea class="form-control ps-form__textarea" rows="5"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ps-form__group">
+                                        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                                        </div>
+                                        <script src="https://www.google.com/recaptcha/api.js" async defer>
+                                        </script>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="ps-form__group">
-                                        <input class="form-control ps-form__input" type="email"
-                                            placeholder="Your E-mail">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="ps-form__group">
-                                        <input class="form-control ps-form__input" type="text" placeholder="Phone">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="ps-form__group">
-                                        <textarea class="form-control ps-form__textarea" rows="5"
-                                            placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 ps-form__group">
-                                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
-                                    </div>
-                                    <script src="https://www.google.com/recaptcha/api.js" async defer>
-                                    </script>
+                                <div class="ps-form__submit">
+                                    <button class="ps-btn ps-btn--warning">Send message</button>
                                 </div>
                             </div>
-                            <div class="ps-form__submit">
-                                <button class="ps-btn ps-btn--warning">Send message</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -433,7 +499,7 @@
                             <img src="img/KNET.svg" alt="">
                             <img src="img/visa.png" alt="">
                             <img src="img/mastercard.png" alt="">
-                            <img src="img/cash.png" alt="">
+                            <img src="img/cash.svg" alt="">
                         </div>
                     </div>
                 </div>
