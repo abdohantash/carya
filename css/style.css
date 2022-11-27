@@ -19333,6 +19333,40 @@ th.invoice {text-align: center;}
   border: 1px solid #8bc34a;
 }
 
+.flex-label {
+  display: flex !important;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.flex-label span{
+  color: #f44336 !important;
+  margin-left: 40px;
+  font-weight: normal !important;
+}
+
+.shipping-box-delivary,
+.payment-box-div {
+  display: none;
+}
+
+.flex-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.flex-btn .back-step{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #cc5d35;
+  margin-top: 14px;
+  min-width: max-content;
+}
+
 
 /* abdo */
 

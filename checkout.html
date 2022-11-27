@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
     <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="plugins/noUiSlider/nouislider.css">
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -267,7 +268,7 @@
             <div class="ps-checkout__content">
                 <ul class="ps-breadcrumb">
                     <li class="ps-breadcrumb__item"><a href="cart.html">cart</a></li>
-                    <li class="ps-breadcrumb__item active" aria-current="page">Information</li>
+                    <li class="ps-breadcrumb__item" aria-current="page">Information</li>
                     <li class="ps-breadcrumb__item" aria-current="page">Shipping</li>
                     <li class="ps-breadcrumb__item" aria-current="page">Payment</li>
                 </ul>
@@ -275,7 +276,7 @@
                 <form  method="post">
                     <div class="row flex-rev">
                         <div class="col-12 col-lg-7 col-xl-8">
-                            <div class="ps-checkout__form">
+                            <div class="ps-checkout__form shipping-address">
                                 <h3>Shipping Address</h3>
                                 <div class="row">
                                     <div class="col-12 col-md-6">
@@ -443,7 +444,7 @@
                                             <input class="ps-input" type="email">
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 mt-2">
                                         <div class="ps-checkout__group">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="create-account">
@@ -458,11 +459,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="ps-btn ps-btn--warning">Continue to shipping</button>
+                                <button type="button" class="ps-btn ps-btn--warning continue-shipping">Continue to shipping</button>
                             </div>
 
-                            <div class="ps-checkout__form">
-                                <ul class="shipping-box">
+                            <div class="ps-checkout__form shipping-box-delivary">
+                                <ul class="shipping-box mb-5">
                                     <li>
                                         <span>Contact</span>
                                         <p>abdohantash9999@gmail.com</p>
@@ -474,10 +475,37 @@
                                         <a href="#">change</a>
                                     </li>
                                 </ul>
-                                <button type="button" class="ps-btn ps-btn--warning">Continue to payment</button>
+                                <div class="delivery-time">
+                                    <h3>Delivery date</h3>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input immediate-radio" name="delivery-time" type="radio" id="immediate">
+                                        <label class="form-check-label flex-label" for="immediate">Immediate delivery
+                                            <!-- <span>رسالة الخطأ او التنويه</span> -->
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input later-radio" name="delivery-time" type="radio" id="later">
+                                        <label class="form-check-label" for="later">Later delivery</label>
+                                    </div>
+                                    <div class="row ps-hidden" data-for="Date-Delivery">
+                                        <div class="col-12 col-md-6">
+                                            <div class="ps-checkout__group">
+                                                <label class="ps-checkout__label">Date</label>
+                                                <input class="ps-input datepicker" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-btn">
+                                    <span class="back-step">
+                                        <i class="icon-chevron-left"></i>
+                                        Return to information
+                                    </span>
+                                    <button type="button" class="ps-btn ps-btn--warning continue-payment">Continue to payment</button>
+                                </div>
                             </div>
 
-                            <div class="ps-checkout__form">
+                            <div class="ps-checkout__form payment-box-div">
                                 <h3>Payment</h3>
                                 <ul class="payment-box">
                                     <li>
@@ -531,7 +559,14 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <button type="button" class="ps-btn ps-btn--warning">Pay now</button>
+                                <div class="flex-btn">
+                                    <span class="back-step">
+                                        <i class="icon-chevron-left"></i>
+                                        Return to shipping
+                                    </span>
+                                    <button type="button" class="ps-btn ps-btn--warning">Pay now</button>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-12 col-lg-5 col-xl-4">
@@ -553,12 +588,16 @@
                                     <div class="ps-product__price">814.85 KD</div>
                                 </div>
                                 <div class="ps-checkout__row">
+                                    <div class="ps-title">Discount</div>
+                                    <div class="ps-product__price">10.00 KD</div>
+                                </div>
+                                <div class="ps-checkout__row">
                                     <div class="ps-title">Shipping</div>
                                     <div>next step</div>
                                 </div>
                                 <div class="ps-checkout__row bold">
                                     <div class="ps-title">Total</div>
-                                    <div class="ps-product__price">814.85 KD</div>
+                                    <div class="ps-product__price">804.85 KD</div>
                                 </div>
                             </div>
                         </div>
@@ -711,6 +750,8 @@
     <script src="plugins/lightGallery/dist/js/lightgallery-all.min.js"></script>
     <script src="plugins/slick/slick/slick.min.js"></script>
     <script src="plugins/noUiSlider/nouislider.min.js"></script>
+    <script src="plugins/daterangepicker/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
     <!-- custom code-->
     <script src="js/main.js"></script>
 </body>

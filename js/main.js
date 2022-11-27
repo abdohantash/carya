@@ -38,6 +38,47 @@ $(window).resize(function(){
  })
  .resize();
 
+    $('.datepicker').daterangepicker({
+      singleDatePicker: true,
+      timePicker: true,
+      locale: {
+        format: 'DD-MM-YYYY ---- hh:mm A'
+      }
+    });
+
+    $('.later-radio').on('click', function (event) {
+        if ($('.later-radio').prop('checked', true)) {
+            $('.ps-hidden[data-for="Date-Delivery"]').slideDown();
+        }
+    });
+
+    $('.immediate-radio').on('click', function (event) {
+        if ($('.immediate-radio').prop('checked', true)) {
+            $('.ps-hidden[data-for="Date-Delivery"]').slideUp();
+        }
+    });
+
+    $(document).on('click','.continue-shipping', function() {
+        $('.shipping-address').hide();
+        $('.shipping-box-delivary').show();
+    });
+
+    $(document).on('click','.continue-payment', function() {
+        $('.shipping-box-delivary').hide();
+        $('.payment-box-div').show();
+    });
+
+    $(document).on('click','.shipping-box-delivary .back-step', function() {
+        $('.shipping-box-delivary').hide();
+        $('.shipping-address').show();
+    });
+
+    $(document).on('click','.payment-box-div .back-step', function() {
+        $('.payment-box-div').hide();
+        $('.shipping-box-delivary').show();
+    });
+    
+
 
 (function($) {
     "use strict";
