@@ -38,13 +38,6 @@ $(window).resize(function(){
  })
  .resize();
 
-    $('.datepicker').daterangepicker({
-      singleDatePicker: true,
-      timePicker: true,
-      locale: {
-        format: 'DD-MM-YYYY ---- hh:mm A'
-      }
-    });
 
     $('.later-radio').on('click', function (event) {
         if ($('.later-radio').prop('checked', true)) {
@@ -102,6 +95,7 @@ $(window).resize(function(){
                     dataAnimateIn = (el.data('owl-animate-in')) ? el.data('owl-animate-in') : '',
                     dataAnimateOut = (el.data('owl-animate-out')) ? el.data('owl-animate-out') : '',
                     dataDefaultItem = el.data('owl-item'),
+                    dataItemXXS = el.data('owl-item-xxs'),
                     dataItemXS = el.data('owl-item-xs'),
                     dataItemSM = el.data('owl-item-sm'),
                     dataItemMD = el.data('owl-item-md'),
@@ -135,6 +129,9 @@ $(window).resize(function(){
                         center: Boolean(center),
                         responsive: {
                             0: {
+                                items: dataItemXXS
+                            },
+                            390: {
                                 items: dataItemXS
                             },
                             480: {
@@ -303,59 +300,59 @@ $(window).resize(function(){
         };
     }
 
-    function initializeClock(endtime) {
-        var daysSpan =  $('.ps-countdown__days');
-        var hoursSpan =  $('.ps-countdown__hours');
-        var minutesSpan = $('.ps-countdown__minutes');
-        var secondsSpan = $('.ps-countdown__seconds');
+    // function initializeClock(endtime) {
+    //     var daysSpan =  $('.ps-countdown__days');
+    //     var hoursSpan =  $('.ps-countdown__hours');
+    //     var minutesSpan = $('.ps-countdown__minutes');
+    //     var secondsSpan = $('.ps-countdown__seconds');
 
-        if (hoursSpan && minutesSpan && secondsSpan) {
-            updateClock();
-            var timeinterval = setInterval(updateClock, 1000);
-        }
+    //     if (hoursSpan && minutesSpan && secondsSpan) {
+    //         updateClock();
+    //         var timeinterval = setInterval(updateClock, 1000);
+    //     }
 
-        function updateClock() {
-            var t = getTimeRemaining(endtime);
+    //     function updateClock() {
+    //         var t = getTimeRemaining(endtime);
             
-            var hoursText = ('0' + t.hours).slice(-2);
-            var minutesText = ('0' + t.minutes).slice(-2);
-            var secondsText = ('0' + t.seconds).slice(-2);
-            var daysText = ('00' + t.days).slice(-3);
+    //         var hoursText = ('0' + t.hours).slice(-2);
+    //         var minutesText = ('0' + t.minutes).slice(-2);
+    //         var secondsText = ('0' + t.seconds).slice(-2);
+    //         var daysText = ('00' + t.days).slice(-3);
             
-            daysSpan.each(function (index) {
-                if (daysText >= 100) {
-                    $(this).find('.first-1st').text(daysText.slice(0, 1));
-                    $(this).find('.first-1st').css('display', 'inline-block');
-                }
-                $(this).find('.first').text(daysText.slice(1, 2));
-                $(this).find('.last').text(daysText.slice(-1));
-            });
+    //         daysSpan.each(function (index) {
+    //             if (daysText >= 100) {
+    //                 $(this).find('.first-1st').text(daysText.slice(0, 1));
+    //                 $(this).find('.first-1st').css('display', 'inline-block');
+    //             }
+    //             $(this).find('.first').text(daysText.slice(1, 2));
+    //             $(this).find('.last').text(daysText.slice(-1));
+    //         });
 
-            hoursSpan.each(function (index) {
-                $(this).find('.first').text(hoursText.slice(0, 1));
-                $(this).find('.last').text(hoursText.slice(-1));
-            });
+    //         hoursSpan.each(function (index) {
+    //             $(this).find('.first').text(hoursText.slice(0, 1));
+    //             $(this).find('.last').text(hoursText.slice(-1));
+    //         });
 
-            minutesSpan.each(function (index) {
-                $(this).find('.first').text(minutesText.slice(0, 1));
-                $(this).find('.last').text(minutesText.slice(-1));
-            });
+    //         minutesSpan.each(function (index) {
+    //             $(this).find('.first').text(minutesText.slice(0, 1));
+    //             $(this).find('.last').text(minutesText.slice(-1));
+    //         });
 
-            secondsSpan.each(function (index) {
-                $(this).find('.first').text(secondsText.slice(0, 1));
-                $(this).find('.last').text(secondsText.slice(-1));
-            });
+    //         secondsSpan.each(function (index) {
+    //             $(this).find('.first').text(secondsText.slice(0, 1));
+    //             $(this).find('.last').text(secondsText.slice(-1));
+    //         });
 
-            if (t.total <= 0) {
-                clearInterval(timeinterval);
-            }
-        }
-    }
+    //         if (t.total <= 0) {
+    //             clearInterval(timeinterval);
+    //         }
+    //     }
+    // }
 
-    function countDown() {
-        var deadline = new Date(Date.parse(new Date()) + 300 * 60 * 60 * 1000);
-        initializeClock(deadline);
-    }
+    // function countDown() {
+    //     var deadline = new Date(Date.parse(new Date()) + 300 * 60 * 60 * 1000);
+    //     initializeClock(deadline);
+    // }
 
     function stickyMenu() {
         $(window).scroll(function (event) {
@@ -541,7 +538,7 @@ $(window).resize(function(){
     $(function() {
         common();
         openModal();
-        countDown();
+        // countDown();
         stickyMenu();
         owlCarouselConfig();
         subMenuToggle();
@@ -558,3 +555,12 @@ $(window).resize(function(){
 })(jQuery);
 
 
+$('.countdown').attr('data-date');
+
+$('.datepicker').daterangepicker({
+    singleDatePicker: true,
+    timePicker: true,
+    locale: {
+      format: 'DD-MM-YYYY ---- hh:mm A'
+    }
+  });
