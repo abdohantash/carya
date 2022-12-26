@@ -3277,7 +3277,7 @@ textarea.form-control {
   vertical-align: top;
   width: 35px;
   height: 35px;
-  background-color: #bfbfbf !important;
+  background-color: #134f41 !important;
   transition: all .4s ease;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -3293,7 +3293,7 @@ textarea.form-control {
 }
 
 .owl-carousel .owl-nav>*:hover {
-  background-color: #333 !important;
+  background-color: #134f41 !important;
 }
 
 .owl-carousel .owl-nav .owl-prev {
@@ -3348,7 +3348,7 @@ textarea.form-control {
 }
 
 .ps-badge.ps-badge--sale {
-  background-color: #4caf50;
+  background-color: #dc1818;
 }
 
 .ps-badge.ps-badge--new {
@@ -9757,7 +9757,7 @@ textarea.form-control {
 }
 
 .ps-section--deals .ps-section__carousel {
-  border: 3px solid #cc5d35;
+  border: 3px solid #134f41;
   border-radius: 5px;
 }
 
@@ -16092,10 +16092,12 @@ textarea.form-control {
 
 .ps-footer {
   padding-bottom: 55px;
+
 }
 
 .ps-footer__middle {
-  margin-bottom: 10px;
+  background: #f7f7f7;
+  padding-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -18423,8 +18425,8 @@ html .bg--parallax {
 }
 
 .po-sticky {
-  position: sticky;
-  top: 10px;
+  /* position: sticky;
+  top: 10px; */
 }
 
 .ps-review__rating {
@@ -19479,6 +19481,15 @@ th.invoice {
   margin-top: 5px;
   align-items: center;
   height: max-content;
+}
+
+.img-under{
+  margin-top: 20px;
+}
+
+
+.img-under img{
+  max-height: 400px;
 }
 
 
